@@ -4,19 +4,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.pentaho.di</groupId><!--组织名-->
-  <artifactId>pdi</artifactId><!--项目名称-->
-  <version>9.0.0.0-SNAPSHOT</version><!--版本号-->
-  <packaging>pom</packaging><!--打包方式POM-->
+  <groupId>org.pentaho.di</groupId>                   <!--组织名-->
+  <artifactId>pdi</artifactId>                        <!--项目名称-->
+  <version>9.0.0.0-SNAPSHOT</version>                 <!--版本号-->
+  <packaging>pom</packaging>                          <!--打包方式POM-->
 
-  <name>Pentaho Data Integration</name>
+  <name>Pentaho Data Integration</name>               
   <description>Container pom for Pentaho Data Integration modules</description>
   <url>http://www.pentaho.com</url>
 
-  <parent>
-    <groupId>org.pentaho</groupId>
-    <artifactId>pentaho-ce-jar-parent-pom</artifactId>
-    <version>9.0.0.0-SNAPSHOT</version>
+  <parent>                                            <!--maven项目之间的继承关系通过<parent> 表示-->
+    <groupId>org.pentaho</groupId>                    <!--当设置了<parent>时，是需要有relative path来查找父项目的pom.xml-->
+    <artifactId>pentaho-ce-jar-parent-pom</artifactId><!--而如果没有，那么默认的父项目pom.xml就在该pom.xml的父目录中-->
+    <version>9.0.0.0-SNAPSHOT</version>               <!--如果没有，就会根据groupid和artifactid在本地和远端maven仓库中寻找-->
   </parent>
 
   <scm>
