@@ -4,10 +4,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.pentaho.di</groupId>
-  <artifactId>pdi</artifactId>
-  <version>9.0.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <groupId>org.pentaho.di</groupId><!--组织名-->
+  <artifactId>pdi</artifactId><!--项目名称-->
+  <version>9.0.0.0-SNAPSHOT</version><!--版本号-->
+  <packaging>pom</packaging><!--打包方式POM-->
 
   <name>Pentaho Data Integration</name>
   <description>Container pom for Pentaho Data Integration modules</description>
